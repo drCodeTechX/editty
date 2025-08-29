@@ -1,29 +1,23 @@
-import { Link } from 'expo-router'
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-const NotFoundScreen = () => {
+const AboutScreen = () => {
   return (
     <>
-        <View style={styles.container}>
-            <Text style={styles.my_text}>Oops!! You got Lost in the Digital Void</Text>
-            <Link href={"/"} style={styles.link}>
-                    Find your way back
-            </Link>
-        </View>
+      <View style={styles.container}>
+        <Text style={styles.my_text}>AboutScreen</Text>
+      </View> 
     </>
   )
 }
 
-export default NotFoundScreen
+export default AboutScreen
 
 const styles = StyleSheet.create({
   my_text : {
     fontWeight: "bold",
     fontSize: 30,
-    color : "#fff",
-    textAlign: "center",
-    padding: 3
+    color : "#fff"
   },
   container: {
     flex: 1,
